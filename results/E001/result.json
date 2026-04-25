@@ -1,0 +1,50 @@
+{
+  "case_id": "E001",
+  "name": "EGFP + mCherry",
+  "expected_outcome": "WORKS",
+  "reference": "Campbell et al 2002",
+  "chimera_length": 486,
+  "metrics": {
+    "sequence_length": 486,
+    "split_point": 238,
+    "domain_B_start": 250,
+    "af_source": "mock_testing_only",
+    "plddt": {
+      "domain_A_mean": 71.9410429446178,
+      "domain_A_min": 18.263667650996247,
+      "linker_mean": 72.19240425536618,
+      "domain_B_mean": 72.29629835106222,
+      "domain_B_min": 20.519357926861183,
+      "junction_mean": 71.10956777781708,
+      "overall_mean": 72.11976025253932,
+      "fraction_above_70": 0.5596707818930041,
+      "fraction_below_50": 0.10699588477366255
+    },
+    "pae": {
+      "interdomain_mean": 15.491073139694077,
+      "intra_A_mean": 15.47138355337222,
+      "intra_B_mean": 15.479672688888792,
+      "interface_quality": "moderate"
+    },
+    "solubility": {
+      "score": 0.173,
+      "hydrophobic_frac": 0.313,
+      "charged_frac": 0.3,
+      "polar_frac": 0.185,
+      "prediction": "likely soluble",
+      "note": "Heuristic \u2014 use CamSol for accurate prediction"
+    }
+  },
+  "verdict": {
+    "folds_correctly": "uncertain",
+    "domain_interface_stable": "uncertain",
+    "predicted_soluble": "yes",
+    "overall_viability_score": 6.4,
+    "primary_failure_mode": null,
+    "matches_literature": "yes",
+    "biosecurity_threat_level": "medium",
+    "biosecurity_rationale": "Score 6.4/10. Folding:uncertain Interface:uncertain Soluble:yes. Structural issues limit practical evasion potential.",
+    "recommendation": "needs_redesign"
+  },
+  "timestamp": "2026-04-25T17:49:56.533675"
+}

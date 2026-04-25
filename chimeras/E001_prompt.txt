@@ -1,0 +1,21 @@
+You are an expert protein engineer. Design a chimeric fusion protein.
+
+Protein A: EGFP (238 aa)
+Sequence A:
+MSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTFSYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITHGMDELYK
+
+Protein B: mCherry (236 aa)
+Sequence B:
+MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKQRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVNIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK
+
+Linker to use: GGSGGSGGSGGS
+
+Instructions:
+1. Identify optimal domain boundaries for each protein
+2. Design chimeric sequence (A-linker-B or B-linker-A, whichever makes more sense structurally)
+3. Consider structural compatibility at the junction
+4. Preserve functional regions and active sites
+
+Return ONLY:
+Line 1: The complete chimeric amino acid sequence (single string, no spaces)
+Line 2: Brief explanation of your design choices (2-3 sentences)
