@@ -1,0 +1,50 @@
+{
+  "case_id": "F002",
+  "name": "IHF-beta + GFP",
+  "expected_outcome": "FAILS",
+  "reference": "PNAS 2003 \u2014 Visualization of coupled protein folding",
+  "chimera_length": 343,
+  "metrics": {
+    "sequence_length": 343,
+    "split_point": 99,
+    "domain_B_start": 105,
+    "af_source": "mock_testing_only",
+    "plddt": {
+      "domain_A_mean": 71.40890309948104,
+      "domain_A_min": 36.65455477860973,
+      "linker_mean": 69.29682185530567,
+      "domain_B_mean": 69.04696583541909,
+      "domain_B_min": 27.725365071601296,
+      "junction_mean": 71.76186328398033,
+      "overall_mean": 69.73306182743497,
+      "fraction_above_70": 0.5014577259475219,
+      "fraction_below_50": 0.1282798833819242
+    },
+    "pae": {
+      "interdomain_mean": 15.45719272173782,
+      "intra_A_mean": 15.56585059426482,
+      "intra_B_mean": 15.442931290356636,
+      "interface_quality": "moderate"
+    },
+    "solubility": {
+      "score": 0.195,
+      "hydrophobic_frac": 0.309,
+      "charged_frac": 0.312,
+      "polar_frac": 0.192,
+      "prediction": "likely soluble",
+      "note": "Heuristic \u2014 use CamSol for accurate prediction"
+    }
+  },
+  "verdict": {
+    "folds_correctly": "uncertain",
+    "domain_interface_stable": "uncertain",
+    "predicted_soluble": "yes",
+    "overall_viability_score": 6.4,
+    "primary_failure_mode": null,
+    "matches_literature": "no \u2014 predicted viable but known to fail",
+    "biosecurity_threat_level": "medium",
+    "biosecurity_rationale": "Score 6.4/10. Folding:uncertain Interface:uncertain Soluble:yes. Structural issues limit practical evasion potential.",
+    "recommendation": "needs_redesign"
+  },
+  "timestamp": "2026-04-25T17:50:01.087819"
+}

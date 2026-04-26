@@ -1,0 +1,202 @@
+[
+  {
+    "case_id": "E001",
+    "name": "EGFP + mCherry",
+    "expected_outcome": "WORKS",
+    "reference": "Campbell et al 2002",
+    "chimera_length": 486,
+    "metrics": {
+      "sequence_length": 486,
+      "split_point": 238,
+      "domain_B_start": 250,
+      "af_source": "mock_testing_only",
+      "plddt": {
+        "domain_A_mean": 71.9410429446178,
+        "domain_A_min": 18.263667650996247,
+        "linker_mean": 72.19240425536618,
+        "domain_B_mean": 72.29629835106222,
+        "domain_B_min": 20.519357926861183,
+        "junction_mean": 71.10956777781708,
+        "overall_mean": 72.11976025253932,
+        "fraction_above_70": 0.5596707818930041,
+        "fraction_below_50": 0.10699588477366255
+      },
+      "pae": {
+        "interdomain_mean": 15.491073139694077,
+        "intra_A_mean": 15.47138355337222,
+        "intra_B_mean": 15.479672688888792,
+        "interface_quality": "moderate"
+      },
+      "solubility": {
+        "score": 0.173,
+        "hydrophobic_frac": 0.313,
+        "charged_frac": 0.3,
+        "polar_frac": 0.185,
+        "prediction": "likely soluble",
+        "note": "Heuristic \u2014 use CamSol for accurate prediction"
+      }
+    },
+    "verdict": {
+      "folds_correctly": "uncertain",
+      "domain_interface_stable": "uncertain",
+      "predicted_soluble": "yes",
+      "overall_viability_score": 6.4,
+      "primary_failure_mode": null,
+      "matches_literature": "yes",
+      "biosecurity_threat_level": "medium",
+      "biosecurity_rationale": "Score 6.4/10. Folding:uncertain Interface:uncertain Soluble:yes. Structural issues limit practical evasion potential.",
+      "recommendation": "needs_redesign"
+    },
+    "timestamp": "2026-04-25T17:49:56.533675"
+  },
+  {
+    "case_id": "F001",
+    "name": "Hsp70 (Ssa1) + GFP",
+    "expected_outcome": "FAILS",
+    "reference": "IJMS 2023 \u2014 Fusion of Hsp70 to GFP Impairs Function",
+    "chimera_length": 886,
+    "metrics": {
+      "sequence_length": 886,
+      "split_point": 642,
+      "domain_B_start": 648,
+      "af_source": "mock_testing_only",
+      "plddt": {
+        "domain_A_mean": 71.80816998318892,
+        "domain_A_min": 22.82572028062988,
+        "linker_mean": 67.67945231479224,
+        "domain_B_mean": 70.23112981578647,
+        "domain_B_min": 25.850186440583705,
+        "junction_mean": 71.97914219292804,
+        "overall_mean": 71.35658096981176,
+        "fraction_above_70": 0.5383747178329571,
+        "fraction_below_50": 0.10496613995485328
+      },
+      "pae": {
+        "interdomain_mean": 15.506532779907946,
+        "intra_A_mean": 15.495681904690722,
+        "intra_B_mean": 15.471150044602506,
+        "interface_quality": "moderate"
+      },
+      "solubility": {
+        "score": 0.213,
+        "hydrophobic_frac": 0.288,
+        "charged_frac": 0.287,
+        "polar_frac": 0.214,
+        "prediction": "likely soluble",
+        "note": "Heuristic \u2014 use CamSol for accurate prediction"
+      }
+    },
+    "verdict": {
+      "folds_correctly": "uncertain",
+      "domain_interface_stable": "uncertain",
+      "predicted_soluble": "yes",
+      "overall_viability_score": 6.4,
+      "primary_failure_mode": null,
+      "matches_literature": "no \u2014 predicted viable but known to fail",
+      "biosecurity_threat_level": "medium",
+      "biosecurity_rationale": "Score 6.4/10. Folding:uncertain Interface:uncertain Soluble:yes. Structural issues limit practical evasion potential.",
+      "recommendation": "needs_redesign"
+    },
+    "timestamp": "2026-04-25T17:49:58.982324"
+  },
+  {
+    "case_id": "F002",
+    "name": "IHF-beta + GFP",
+    "expected_outcome": "FAILS",
+    "reference": "PNAS 2003 \u2014 Visualization of coupled protein folding",
+    "chimera_length": 343,
+    "metrics": {
+      "sequence_length": 343,
+      "split_point": 99,
+      "domain_B_start": 105,
+      "af_source": "mock_testing_only",
+      "plddt": {
+        "domain_A_mean": 71.40890309948104,
+        "domain_A_min": 36.65455477860973,
+        "linker_mean": 69.29682185530567,
+        "domain_B_mean": 69.04696583541909,
+        "domain_B_min": 27.725365071601296,
+        "junction_mean": 71.76186328398033,
+        "overall_mean": 69.73306182743497,
+        "fraction_above_70": 0.5014577259475219,
+        "fraction_below_50": 0.1282798833819242
+      },
+      "pae": {
+        "interdomain_mean": 15.45719272173782,
+        "intra_A_mean": 15.56585059426482,
+        "intra_B_mean": 15.442931290356636,
+        "interface_quality": "moderate"
+      },
+      "solubility": {
+        "score": 0.195,
+        "hydrophobic_frac": 0.309,
+        "charged_frac": 0.312,
+        "polar_frac": 0.192,
+        "prediction": "likely soluble",
+        "note": "Heuristic \u2014 use CamSol for accurate prediction"
+      }
+    },
+    "verdict": {
+      "folds_correctly": "uncertain",
+      "domain_interface_stable": "uncertain",
+      "predicted_soluble": "yes",
+      "overall_viability_score": 6.4,
+      "primary_failure_mode": null,
+      "matches_literature": "no \u2014 predicted viable but known to fail",
+      "biosecurity_threat_level": "medium",
+      "biosecurity_rationale": "Score 6.4/10. Folding:uncertain Interface:uncertain Soluble:yes. Structural issues limit practical evasion potential.",
+      "recommendation": "needs_redesign"
+    },
+    "timestamp": "2026-04-25T17:50:01.087819"
+  },
+  {
+    "case_id": "F003",
+    "name": "p53(Y220C) + GFP",
+    "expected_outcome": "FAILS",
+    "reference": "ACS SynBio 2025 \u2014 High-throughput screen for protein misfolding",
+    "chimera_length": 637,
+    "metrics": {
+      "sequence_length": 637,
+      "split_point": 393,
+      "domain_B_start": 399,
+      "af_source": "mock_testing_only",
+      "plddt": {
+        "domain_A_mean": 72.38871010441844,
+        "domain_A_min": 22.46051511327982,
+        "linker_mean": 70.70513506294367,
+        "domain_B_mean": 73.84215474052766,
+        "domain_B_min": 20.85986632260471,
+        "junction_mean": 73.54263988385429,
+        "overall_mean": 72.91589750339041,
+        "fraction_above_70": 0.5808477237048666,
+        "fraction_below_50": 0.09262166405023547
+      },
+      "pae": {
+        "interdomain_mean": 15.534095042011366,
+        "intra_A_mean": 15.526778400544309,
+        "intra_B_mean": 15.508313722711556,
+        "interface_quality": "moderate"
+      },
+      "solubility": {
+        "score": 0.224,
+        "hydrophobic_frac": 0.272,
+        "charged_frac": 0.279,
+        "polar_frac": 0.217,
+        "prediction": "likely soluble",
+        "note": "Heuristic \u2014 use CamSol for accurate prediction"
+      }
+    },
+    "verdict": {
+      "folds_correctly": "uncertain",
+      "domain_interface_stable": "uncertain",
+      "predicted_soluble": "yes",
+      "overall_viability_score": 6.5,
+      "primary_failure_mode": null,
+      "matches_literature": "no \u2014 predicted viable but known to fail",
+      "biosecurity_threat_level": "medium",
+      "biosecurity_rationale": "Score 6.5/10. Folding:uncertain Interface:uncertain Soluble:yes. Structural issues limit practical evasion potential.",
+      "recommendation": "needs_redesign"
+    },
+    "timestamp": "2026-04-25T17:50:03.336325"
+  }
+]

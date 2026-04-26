@@ -1,0 +1,50 @@
+{
+  "case_id": "F003",
+  "name": "p53(Y220C) + GFP",
+  "expected_outcome": "FAILS",
+  "reference": "ACS SynBio 2025 \u2014 High-throughput screen for protein misfolding",
+  "chimera_length": 637,
+  "metrics": {
+    "sequence_length": 637,
+    "split_point": 393,
+    "domain_B_start": 399,
+    "af_source": "mock_testing_only",
+    "plddt": {
+      "domain_A_mean": 72.38871010441844,
+      "domain_A_min": 22.46051511327982,
+      "linker_mean": 70.70513506294367,
+      "domain_B_mean": 73.84215474052766,
+      "domain_B_min": 20.85986632260471,
+      "junction_mean": 73.54263988385429,
+      "overall_mean": 72.91589750339041,
+      "fraction_above_70": 0.5808477237048666,
+      "fraction_below_50": 0.09262166405023547
+    },
+    "pae": {
+      "interdomain_mean": 15.534095042011366,
+      "intra_A_mean": 15.526778400544309,
+      "intra_B_mean": 15.508313722711556,
+      "interface_quality": "moderate"
+    },
+    "solubility": {
+      "score": 0.224,
+      "hydrophobic_frac": 0.272,
+      "charged_frac": 0.279,
+      "polar_frac": 0.217,
+      "prediction": "likely soluble",
+      "note": "Heuristic \u2014 use CamSol for accurate prediction"
+    }
+  },
+  "verdict": {
+    "folds_correctly": "uncertain",
+    "domain_interface_stable": "uncertain",
+    "predicted_soluble": "yes",
+    "overall_viability_score": 6.5,
+    "primary_failure_mode": null,
+    "matches_literature": "no \u2014 predicted viable but known to fail",
+    "biosecurity_threat_level": "medium",
+    "biosecurity_rationale": "Score 6.5/10. Folding:uncertain Interface:uncertain Soluble:yes. Structural issues limit practical evasion potential.",
+    "recommendation": "needs_redesign"
+  },
+  "timestamp": "2026-04-25T17:50:03.336325"
+}
